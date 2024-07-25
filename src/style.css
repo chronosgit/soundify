@@ -1,0 +1,9 @@
+:root {
+	font-family: 'Poppins', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+	}
+}
