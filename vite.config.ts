@@ -13,9 +13,10 @@ export default defineConfig({
 			'@locales': path.resolve(__dirname, './src/locales'),
 			'@mixins': path.resolve(__dirname, './src/mixins'),
 			'@models': path.resolve(__dirname, './src/models'),
-			'@pages': path.resolve(__dirname, './src/pages'),
+			'@modules': path.resolve(__dirname, './src/modules'),
 			'@router': path.resolve(__dirname, './src/router'),
 			'@services': path.resolve(__dirname, './src/services'),
+			'@views': path.resolve(__dirname, './src/views'),
 		},
 	},
 });
