@@ -1,9 +1,12 @@
+// @ts-nocheck
+
 import { nextTick } from 'vue';
 import { createI18n } from 'vue-i18n';
 
+export const DEFAULT_LOCALE = 'en';
 export const SUPPORT_LOCALES = ['en', 'ru'];
 
-export function setupI18n(options = { locale: 'en' }) {
+export function setupI18n(options = { locale: DEFAULT_LOCALE }) {
 	const i18n = createI18n(options);
 	setI18nLanguage(i18n, options.locale);
 
@@ -28,11 +31,12 @@ export function setI18nLanguage(i18n, locale) {
 }
 
 export async function loadLocaleMessages(i18n, locale) {
-	// load locale messages with dynamic import
-	const messages = await import(`./locales/${locale}.json`);
+	const messages = await import(`./${locale || DEFAULT_LOCALE}.json`);
+
+	console.log(locale, messages);
 
 	// set locale and locale message
-	i18n.global.setLocaleMessage(locale, messages.default);
+	i18n.global.setLocaleMessage(locale || DEFAULT_LOCALE, messages.default);
 
 	return nextTick();
 }

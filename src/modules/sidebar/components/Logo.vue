@@ -1,5 +1,5 @@
 <template>
-	<div class="flex align-center gap-1">
+	<div class="flex items-center gap-1">
 		<!-- Logo image (icon) goes here -->
 
 		<div class="flex gap-1">
