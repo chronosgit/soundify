@@ -1,5 +1,7 @@
 <template>
-	<Sidebar />
+	<div class="p-2">
+		<Sidebar />
+	</div>
 </template>
 
 <script lang="ts">
