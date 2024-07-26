@@ -6,6 +6,19 @@
 	font-family: 'Poppins', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 
 	--clr-white: #ffffff;
+	--clr-black: #000000;
 	--clr-gray-dark: #121212;
 	--clr-gray-light: #b3b3b3;
+
+	--clr-bg: var(--clr-white);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--clr-bg);
 }
