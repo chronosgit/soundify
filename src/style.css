@@ -4,4 +4,8 @@
 
 :root {
 	font-family: 'Poppins', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+	--clr-white: #ffffff;
+	--clr-gray-dark: #121212;
+	--clr-gray-light: #b3b3b3;
 }
