@@ -1,5 +1,7 @@
 {
-	"messages": {
-		"sidebar_features_main": "Главная"
+	"sidebar": {
+		"feature_main": {
+			"name": "Главная"
+		}
 	}
 }

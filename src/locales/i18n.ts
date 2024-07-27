@@ -6,19 +6,21 @@ import { createI18n } from 'vue-i18n';
 export const DEFAULT_LOCALE = 'en';
 export const SUPPORT_LOCALES = ['en', 'ru'];
 
-export function setupI18n(options = { locale: DEFAULT_LOCALE }) {
+export function setupI18n(
+	options = {
+		locale: DEFAULT_LOCALE,
+		fallbackLocale: DEFAULT_LOCALE,
+	}
+) {
 	const i18n = createI18n(options);
+
 	setI18nLanguage(i18n, options.locale);
 
 	return i18n;
 }
 
 export function setI18nLanguage(i18n, locale) {
-	if (i18n.mode === 'legacy') {
-		i18n.global.locale = locale;
-	} else {
-		i18n.global.locale.value = locale;
-	}
+	i18n.global.locale = locale;
 
 	/**
 	 * NOTE:
@@ -31,12 +33,12 @@ export function setI18nLanguage(i18n, locale) {
 }
 
 export async function loadLocaleMessages(i18n, locale) {
-	const messages = await import(`./${locale || DEFAULT_LOCALE}.json`);
+	const myLocale = locale == null ? DEFAULT_LOCALE : locale;
 
-	console.log(locale, messages);
+	const messages = await import(`./${myLocale}.json`);
 
 	// set locale and locale message
-	i18n.global.setLocaleMessage(locale || DEFAULT_LOCALE, messages.default);
+	i18n.global.setLocaleMessage(myLocale, messages.default);
 
 	return nextTick();
 }

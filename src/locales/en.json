@@ -1,3 +1,7 @@
 {
-	"sidebar_features_main": "Main"
+	"sidebar": {
+		"feature_main": {
+			"name": "Main"
+		}
+	}
 }

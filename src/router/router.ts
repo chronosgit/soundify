@@ -22,10 +22,11 @@ const router = createRouter({
 });
 
 // navigation guards
-router.beforeEach(async (to, from, next) => {
+router.beforeEach(async (to, _, next) => {
 	const paramsLocale = to.params.locale as string;
 
-	if (paramsLocale != null && !SUPPORT_LOCALES.includes(paramsLocale)) {
+	// to fallback locale
+	if (!SUPPORT_LOCALES.includes(paramsLocale)) {
 		return next({ params: { locale: DEFAULT_LOCALE } });
 	}
 
