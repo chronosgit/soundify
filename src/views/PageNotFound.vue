@@ -21,10 +21,6 @@
 				<ButtonWhiteRounded name="Home" :onClick="navigateHome" />
 			</div>
 		</div>
-
-		<!-- <div class="">
-			Untangled earring image here
-		</div> -->
 	</div>
 </template>
 
