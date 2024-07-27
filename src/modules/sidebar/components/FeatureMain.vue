@@ -1,11 +1,11 @@
 <template>
-	<div class="flex gap-4 cursor-pointer select-none" @click="toMainPage">
-		<img
-			:src="houseIcon"
-			alt="house"
-			class="size-5 whitedImage transition-colors"
-			:class="{ whitedImage: isLinkActive, grayedImage: !isLinkActive }"
-		/>
+	<div
+		class="flex items-center gap-3 cursor-pointer select-none"
+		@click="toMainPage"
+	>
+		<div class="-translate-x-0.5">
+			<House />
+		</div>
 
 		<p
 			class="items-center font-medium text-gray-light"
@@ -18,35 +18,17 @@
 
 <script lang="ts">
 	import { defineComponent } from 'vue';
-	import houseIcon from '@assets/icons/house.svg';
+	import ActiveLinkMixin from '../mixins/ActiveLinkMixin.vue';
+	import House from './House.vue';
 
 	export default defineComponent({
-		name: 'FeatureMain',
+		name: 'SidebarFeatureMain',
+		mixins: [ActiveLinkMixin],
+		components: { House },
 		methods: {
 			toMainPage() {
 				this.$router.push({ name: 'Home' });
 			},
 		},
-		data() {
-			return { houseIcon };
-		},
-		computed: {
-			isLinkActive() {
-				const currentRoute = this.$router.currentRoute;
-				const currentPath = currentRoute.value.path;
-
-				return currentPath === '/';
-			},
-		},
 	});
 </script>
-
-<style scoped>
-	.whitedImage {
-		filter: invert(100%) sepia(100%) brightness(100%) contrast(100%);
-	}
-
-	.grayedImage {
-		filter: invert(100%) sepia(100%) brightness(60%) contrast(100%);
-	}
-</style>
