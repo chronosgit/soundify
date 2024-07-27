@@ -9,11 +9,12 @@
 </template>
 
 <script>
-	import Logo from './components/Logo.vue';
+	import { defineComponent } from 'vue';
+	import Logo from '@/components/Logo.vue';
 	import Features from './components/Features.vue';
 
-	export default {
+	export default defineComponent({
 		name: 'Sidebar',
 		components: { Logo, Features },
-	};
+	});
 </script>

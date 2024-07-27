@@ -17,9 +17,9 @@
 </template>
 
 <script lang="ts">
-	import { PropType } from 'vue';
+	import { defineComponent, PropType } from 'vue';
 
-	export default {
+	export default defineComponent({
 		name: 'ButtonWhiteRounded',
 		props: {
 			name: {
@@ -43,5 +43,5 @@
 				required: true,
 			},
 		},
-	};
+	});
 </script>

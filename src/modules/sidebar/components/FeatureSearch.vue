@@ -16,9 +16,10 @@
 </template>
 
 <script lang="ts">
+	import { defineComponent } from 'vue';
 	import searchIcon from '@assets/icons/search.svg';
 
-	export default {
+	export default defineComponent({
 		name: 'FeatureSearch',
 		data() {
 			return { searchIcon };
@@ -34,7 +35,7 @@
 				}
 			},
 		},
-	};
+	});
 </script>
 
 <style scoped>

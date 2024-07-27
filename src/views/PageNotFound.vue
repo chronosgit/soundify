@@ -33,9 +33,10 @@
 </template>
 
 <script lang="ts">
+	import { defineComponent } from 'vue';
 	import ButtonWhiteRounded from '@/components/buttons/ButtonWhiteRounded.vue';
 
-	export default {
+	export default defineComponent({
 		name: 'PageNotFound',
 		components: { ButtonWhiteRounded },
 		methods: {
@@ -58,5 +59,5 @@
 				}
 			},
 		},
-	};
+	});
 </script>

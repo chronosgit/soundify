@@ -17,9 +17,10 @@
 </template>
 
 <script lang="ts">
+	import { defineComponent } from 'vue';
 	import houseIcon from '@assets/icons/house.svg';
 
-	export default {
+	export default defineComponent({
 		name: 'FeatureMain',
 		methods: {
 			toMainPage() {
@@ -37,7 +38,7 @@
 				return currentPath === '/';
 			},
 		},
-	};
+	});
 </script>
 
 <style scoped>
