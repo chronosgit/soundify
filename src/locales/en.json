@@ -1,1 +1,19 @@
-{}
+{
+	"sidebar": {
+		"features": {
+			"main": "Main",
+			"search": "Search"
+		}
+	},
+	"page_not_found": {
+		"error_status": "404",
+		"message_oops": "Oops!",
+		"message_joke": "We're all tangled up.",
+		"message_advice": "Refresh this page or try again later.",
+		"message_reassure": "We'll do our best to keep the music going."
+	},
+	"buttons": {
+		"back": "Back",
+		"home": "Home"
+	}
+}

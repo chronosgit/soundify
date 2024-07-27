@@ -11,4 +11,4 @@
 
 ## Built on Vite
 
-Utilizes _Vue3, TypeScript, Vuetify, Docker, Pinia, i18n, FormKit_.
+Utilizes _Vue3, TypeScript, Tailwind CSS, Docker, Pinia, i18n, FormKit_.

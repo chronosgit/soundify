@@ -8,10 +8,11 @@
 			"@helpers/*": ["src/helpers/*"],
 			"@locales/*": ["src/locales/*"],
 			"@mixins/*": ["src/mixins/*"],
+			"@modules/*": ["src/modules/*"],
 			"@models/*": ["src/models/*"],
-			"@pages/*": ["src/pages/*"],
 			"@router/*": ["src/router/*"],
-			"@services/*": ["src/services/*"]
+			"@services/*": ["src/services/*"],
+			"@views/*": ["src/views/*"]
 		}
 	},
 	"files": [],
