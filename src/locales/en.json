@@ -1,7 +1,8 @@
 {
 	"sidebar": {
-		"feature_main": {
-			"name": "Main"
+		"features": {
+			"main": "Main",
+			"search": "Search"
 		}
 	}
 }

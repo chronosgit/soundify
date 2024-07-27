@@ -37,8 +37,30 @@ export async function loadLocaleMessages(i18n, locale) {
 
 	const messages = await import(`./${myLocale}.json`);
 
-	// set locale and locale message
+	// Set locale and locale message
 	i18n.global.setLocaleMessage(myLocale, messages.default);
 
 	return nextTick();
+}
+
+export async function checkLocalizationOnRouting(to, next, i18n) {
+	const paramsLocale = to.params.locale as string;
+
+	// To fallback locale
+	if (!SUPPORT_LOCALES.includes(paramsLocale)) {
+		setI18nLanguage(i18n, DEFAULT_LOCALE);
+
+		return;
+	}
+
+	// If such local is new, need to load then
+	if (!i18n.global.availableLocales.includes(paramsLocale)) {
+		try {
+			await loadLocaleMessages(i18n, paramsLocale);
+		} catch (err) {
+			console.error(err);
+		}
+	}
+
+	setI18nLanguage(i18n, paramsLocale);
 }

@@ -11,7 +11,7 @@
 			class="items-center font-medium text-gray-light"
 			:class="{ 'text-white': isLinkActive }"
 		>
-			{{ $t('sidebar.feature_main.name') }}
+			{{ $t('sidebar.features.main') }}
 		</p>
 	</div>
 </template>

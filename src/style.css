@@ -25,6 +25,10 @@
 	background-color: #dba0a0;
 }
 
+html {
+	overflow-x: hidden;
+}
+
 body {
 	background-color: var(--clr-bg);
 }
