@@ -4,5 +4,16 @@
 			"main": "Главная",
 			"search": "Поиск"
 		}
+	},
+	"page_not_found": {
+		"error_status": "404",
+		"message_oops": "Упс!",
+		"message_joke": "Мы запутались.",
+		"message_advice": "Обновите эту страницу или попробуйте позже.",
+		"message_reassure": "Мы сделаем всё наше в силах, чтобы исправить проблему."
+	},
+	"buttons": {
+		"back": "Назад",
+		"home": "Домой"
 	}
 }

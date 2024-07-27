@@ -1,31 +1,39 @@
 <template>
 	<div class="h-screen flex justify-center items-center overflow-y-hidden">
 		<div class="space-y-8">
-			<p class="text-7xl font-extrabold">404</p>
+			<p class="text-7xl font-extrabold">
+				{{ $t('page_not_found.error_status') }}
+			</p>
 
 			<div class="space-y-1">
-				<p class="text-xl font-bold">Oops!</p>
+				<p class="text-xl font-bold">{{ $t('page_not_found.message_oops') }}</p>
 
-				<p class="text-xl">We're all tangled up.</p>
+				<p class="text-xl">{{ $t('page_not_found.message_joke') }}</p>
 			</div>
 
 			<div class="-space-y-1 font-extralight">
-				<p>Refresh this page or try again later.</p>
+				<p>{{ $t('page_not_found.message_advice') }}</p>
 
-				<p>We'll do our best to keep the music going.</p>
+				<p>{{ $t('page_not_found.message_reassure') }}</p>
 			</div>
 
 			<div class="flex items-center gap-4 text-black">
-				<ButtonWhiteRounded name="Back" :onClick="navigateBack" />
+				<ButtonWhiteRounded
+					:name="$t('buttons.back')"
+					:onClick="navigateBack"
+				/>
 
-				<ButtonWhiteRounded name="Home" :onClick="navigateHome" />
+				<ButtonWhiteRounded
+					:name="$t('buttons.home')"
+					:onClick="navigateHome"
+				/>
 			</div>
 		</div>
 	</div>
 </template>
 
 <script lang="ts">
-	import ButtonWhiteRounded from '@/components/ButtonWhiteRounded.vue';
+	import ButtonWhiteRounded from '@/components/buttons/ButtonWhiteRounded.vue';
 
 	export default {
 		name: 'PageNotFound',
