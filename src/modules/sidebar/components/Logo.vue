@@ -3,7 +3,7 @@
 		<!-- Logo image (icon) goes here -->
 
 		<div class="flex gap-1">
-			<p class="text-xl font-medium">Soundify</p>
+			<p class="text-xl font-semibold">Soundify</p>
 
 			<p class="text-sm">&copy;</p>
 		</div>

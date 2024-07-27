@@ -5,6 +5,7 @@ export default {
 		extend: {
 			colors: {
 				'gray-dark': 'var(--clr-gray-dark)',
+				'gray-light': 'var(--clr-gray-light)',
 			},
 		},
 	},
