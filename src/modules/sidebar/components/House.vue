@@ -43,7 +43,7 @@
 				return {
 					'filter-whited': this.isLinkActive,
 					'filter-grayed': !this.isLinkActive,
-					[this.class]: !this.isLinkActive, // Apply the additional class from props
+					[this.class]: !this.isLinkActive,
 				};
 			},
 		},
