@@ -21,6 +21,16 @@
 			"name": "My library",
 			"name_tooltip": "Close my media library",
 			"plus_tooltip": "Create playlist or new folder"
+		},
+		"create_playlist_card": {
+			"heading": "Create your first playlist",
+			"descr": "It's super easy! We can help you.",
+			"button_name": "Create playlist"
+		},
+		"subscribe_podcasts_card": {
+			"heading": "Subscribe to interesting podcasts",
+			"descr": "You'll be notified about new episodes.",
+			"button_name": "See details"
 		}
 	}
 }
