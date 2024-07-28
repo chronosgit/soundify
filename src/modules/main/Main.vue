@@ -17,7 +17,7 @@
 <script>
 	import { defineComponent } from 'vue';
 	import Logo from '@/components/Logo.vue';
-	import Localization from '@/components/Localization.vue';
+	import Localization from '@/modules/localization/Localization.vue';
 	import FeatureHome from './components/FeatureHome.vue';
 	import FeatureSearch from './components/FeatureSearch.vue';
 
