@@ -5,7 +5,7 @@
 		class="opacity-0 absolute left-1/2 -translate-x-1/2 -top-4 -translate-y-4 px-2 py-1 bg-[#282828] rounded-md shadow-lg transition-all delay-150"
 		:class="hoverClass"
 	>
-		<p class="text-white text-sm">
+		<p class="text-white text-xs whitespace-nowrap">
 			{{ message }}
 		</p>
 	</div>

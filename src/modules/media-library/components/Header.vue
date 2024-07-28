@@ -1,13 +1,18 @@
 <template>
 	<div class="flex justify-between items-center select-none">
-		<div class="flex items-center gap-2 cursor-pointer group">
-			<BooksIcon class="group-hover:filter-whited transition-colors" />
+		<div class="relative">
+			<div class="peer flex items-center gap-2 cursor-pointer group">
+				<BooksIcon class="group-hover:filter-whited" />
 
-			<h2
-				class="text-gray-light font-semibold transition-colors group-hover:text-white"
-			>
-				{{ $t('media_library.header_name') }}
-			</h2>
+				<h2 class="text-gray-light font-semibold group-hover:text-white">
+					{{ $t('media_library.header.name') }}
+				</h2>
+			</div>
+
+			<Tooltip
+				:message="$t('media_library.header.name_tooltip')"
+				hoverClass="peer-hover:opacity-100"
+			/>
 		</div>
 
 		<div class="relative">
@@ -17,7 +22,10 @@
 				+
 			</button>
 
-			<Tooltip message="Hello" hoverClass="peer-hover:opacity-100" />
+			<Tooltip
+				:message="$t('media_library.header.plus_tooltip')"
+				hoverClass="peer-hover:opacity-100"
+			/>
 		</div>
 	</div>
 </template>

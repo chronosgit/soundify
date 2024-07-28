@@ -17,6 +17,10 @@
 		"home": "Home"
 	},
 	"media_library": {
-		"header_name": "My library"
+		"header": {
+			"name": "My library",
+			"name_tooltip": "Close my media library",
+			"plus_tooltip": "Create playlist or new folder"
+		}
 	}
 }
