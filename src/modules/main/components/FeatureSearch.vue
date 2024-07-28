@@ -20,7 +20,7 @@
 	import Search from './Search.vue';
 
 	export default defineComponent({
-		name: 'SidebarFeatureSearch',
+		name: 'Main_FeatureSearch',
 		components: { Search },
 		methods: {
 			toSearchbar() {

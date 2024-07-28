@@ -22,7 +22,7 @@
 	import House from './House.vue';
 
 	export default defineComponent({
-		name: 'SidebarFeatureMain',
+		name: 'Main_FeatureHome',
 		mixins: [ActiveLinkMixin],
 		components: { House },
 		methods: {

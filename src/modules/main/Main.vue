@@ -7,7 +7,7 @@
 		</div>
 
 		<div class="flex flex-col gap-y-3">
-			<FeatureMain />
+			<FeatureHome />
 
 			<FeatureSearch />
 		</div>
@@ -18,11 +18,11 @@
 	import { defineComponent } from 'vue';
 	import Logo from '@/components/Logo.vue';
 	import Localization from '@/components/Localization.vue';
-	import FeatureMain from './components/FeatureMain.vue';
+	import FeatureHome from './components/FeatureHome.vue';
 	import FeatureSearch from './components/FeatureSearch.vue';
 
 	export default defineComponent({
-		name: 'Sidebar',
-		components: { Logo, Localization, FeatureMain, FeatureSearch },
+		name: 'Main',
+		components: { Logo, Localization, FeatureHome, FeatureSearch },
 	});
 </script>

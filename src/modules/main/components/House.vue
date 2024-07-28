@@ -31,7 +31,7 @@
 	import { defineComponent } from 'vue';
 
 	export default defineComponent({
-		name: 'SidebarHouse',
+		name: 'Main_House',
 		mixins: [ActiveLinkMixin],
 		props: {
 			class: {

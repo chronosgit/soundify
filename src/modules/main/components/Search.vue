@@ -21,7 +21,7 @@
 	import { defineComponent } from 'vue';
 
 	export default defineComponent({
-		name: 'SidebarSearch',
+		name: 'Main_Search',
 		props: {
 			class: {
 				type: String,

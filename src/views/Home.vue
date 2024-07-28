@@ -1,15 +1,15 @@
 <template>
 	<div class="p-2">
-		<Sidebar />
+		<Main />
 	</div>
 </template>
 
 <script lang="ts">
 	import { defineComponent } from 'vue';
-	import Sidebar from '@/modules/sidebar/Sidebar.vue';
+	import Main from '@/modules/main/Main.vue';
 
 	export default defineComponent({
 		name: 'Home',
-		components: { Sidebar },
+		components: { Main },
 	});
 </script>
