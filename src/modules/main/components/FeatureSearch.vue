@@ -10,7 +10,7 @@
 		<p
 			class="items-center font-medium text-gray-light group-hover:text-white transition-colors"
 		>
-			{{ $t('sidebar.features.search') }}
+			{{ $t('main.features.search') }}
 		</p>
 	</div>
 </template>

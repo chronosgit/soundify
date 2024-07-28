@@ -11,7 +11,7 @@
 			class="items-center font-medium text-gray-light group-hover:text-white transition-colors"
 			:class="{ 'text-white': isLinkActive }"
 		>
-			{{ $t('sidebar.features.main') }}
+			{{ $t('main.features.main') }}
 		</p>
 	</div>
 </template>

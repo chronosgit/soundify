@@ -6,7 +6,7 @@
 			<h2
 				class="text-gray-light font-semibold transition-colors group-hover:text-white"
 			>
-				My library
+				{{ $t('media_library.header_name') }}
 			</h2>
 		</div>
 
