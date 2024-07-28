@@ -5,7 +5,7 @@
 				const currentRoute = this.$router.currentRoute;
 				const currentPath = currentRoute.value.path;
 
-				return currentPath === '/';
+				return currentPath !== '/';
 			},
 		},
 	};
