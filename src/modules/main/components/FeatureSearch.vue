@@ -4,7 +4,7 @@
 		@click="toSearchbar"
 	>
 		<div class="max-w-16 max-h-16">
-			<Search class="group-hover:brightness-100 transition-all" />
+			<SearchIcon class="group-hover:brightness-100 transition-all" />
 		</div>
 
 		<p
@@ -17,11 +17,11 @@
 
 <script lang="ts">
 	import { defineComponent } from 'vue';
-	import Search from './Search.vue';
+	import SearchIcon from './SearchIcon.vue';
 
 	export default defineComponent({
 		name: 'Main_FeatureSearch',
-		components: { Search },
+		components: { SearchIcon },
 		methods: {
 			toSearchbar() {
 				try {

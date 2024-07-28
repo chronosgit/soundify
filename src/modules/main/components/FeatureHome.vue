@@ -4,7 +4,7 @@
 		@click="toMainPage"
 	>
 		<div class="-translate-x-0.5">
-			<House class="group-hover:filter-whited transition-all" />
+			<HouseIcon class="group-hover:filter-whited transition-all" />
 		</div>
 
 		<p
@@ -19,12 +19,12 @@
 <script lang="ts">
 	import { defineComponent } from 'vue';
 	import ActiveLinkMixin from '../mixins/ActiveLinkMixin.vue';
-	import House from './House.vue';
+	import HouseIcon from './HouseIcon.vue';
 
 	export default defineComponent({
 		name: 'Main_FeatureHome',
 		mixins: [ActiveLinkMixin],
-		components: { House },
+		components: { HouseIcon },
 		methods: {
 			toMainPage() {
 				this.$router.push({ name: 'Home' });

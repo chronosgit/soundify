@@ -1,5 +1,5 @@
 <template>
-	<div class="max-w-[17.5rem] py-4 px-5 bg-gray-dark rounded-md">
+	<div class="py-4 px-5 bg-gray-dark rounded-md">
 		<div class="mb-4 flex justify-between items-center">
 			<Logo />
 
