@@ -9,8 +9,8 @@
 		xmlns:xlink="http://www.w3.org/1999/xlink"
 		viewBox="0 0 486.196 486.196"
 		xml:space="preserve"
-		class="size-6 filter-whited"
-		:class="{ 'filter-whited': isLinkActive, 'filter-grayed': !isLinkActive }"
+		class="size-6"
+		:class="activeLinkDynamicClasses"
 	>
 		<g>
 			<path
@@ -26,12 +26,26 @@
 	</svg>
 </template>
 
-<script lang="ts">
+<script>
 	import ActiveLinkMixin from '../mixins/ActiveLinkMixin.vue';
 	import { defineComponent } from 'vue';
 
 	export default defineComponent({
-		name: 'SidebarHouse',
+		name: 'Main_House',
 		mixins: [ActiveLinkMixin],
+		props: {
+			class: {
+				type: String,
+			},
+		},
+		computed: {
+			activeLinkDynamicClasses() {
+				return {
+					'filter-whited': this.isLinkActive,
+					'filter-grayed': !this.isLinkActive,
+					[this.class]: !this.isLinkActive,
+				};
+			},
+		},
 	});
 </script>

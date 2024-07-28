@@ -1,5 +1,5 @@
 {
-	"sidebar": {
+	"main": {
 		"features": {
 			"main": "Main",
 			"search": "Search"
@@ -15,5 +15,12 @@
 	"buttons": {
 		"back": "Back",
 		"home": "Home"
+	},
+	"media_library": {
+		"header": {
+			"name": "My library",
+			"name_tooltip": "Close my media library",
+			"plus_tooltip": "Create playlist or new folder"
+		}
 	}
 }
