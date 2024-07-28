@@ -1,5 +1,5 @@
 <template>
-	<aside class="max-w-[17.5rem]">
+	<aside class="max-w-[17.5rem] min-w-[17.5rem]">
 		<div class="space-y-2">
 			<Main />
 

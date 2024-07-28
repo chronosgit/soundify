@@ -10,7 +10,11 @@
 			</h2>
 		</div>
 
-		<button class="text-3xl font-light text-gray-light">+</button>
+		<button
+			class="size-8 text-3xl font-light text-gray-light rounded-full transition-all hover:text-white hover:bg-[#1b1b1b]"
+		>
+			+
+		</button>
 	</div>
 </template>
 
