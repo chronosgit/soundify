@@ -34,11 +34,16 @@
 
 <script lang="ts">
 	import { defineComponent } from 'vue';
+	import { mapStores } from 'pinia';
 	import ButtonWhiteRounded from '@/components/buttons/ButtonWhiteRounded.vue';
+	import useRoutesHistoryStore from '@/store/useRoutesHistoryStore';
 
 	export default defineComponent({
 		name: 'PageNotFound',
 		components: { ButtonWhiteRounded },
+		computed: {
+			...mapStores(useRoutesHistoryStore),
+		},
 		methods: {
 			navigateBack() {
 				try {

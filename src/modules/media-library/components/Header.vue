@@ -11,7 +11,8 @@
 
 			<Tooltip
 				:message="$t('media_library.header.name_tooltip')"
-				hoverClass="peer-hover:opacity-100"
+				:isHigher="false"
+				class="peer-hover:opacity-100"
 			/>
 		</div>
 
@@ -24,7 +25,8 @@
 
 			<Tooltip
 				:message="$t('media_library.header.plus_tooltip')"
-				hoverClass="peer-hover:opacity-100"
+				:isHigher="false"
+				class="peer-hover:opacity-100"
 			/>
 		</div>
 	</div>

@@ -5,7 +5,7 @@
 		<p class="text-sm">{{ descr }}</p>
 
 		<button
-			class="px-4 py-1 text-black text-sm font-semibold bg-white rounded-full"
+			class="px-4 py-1 text-black text-sm font-semibold bg-white rounded-full transition-transform hover:scale-105"
 			@click="onClick"
 		>
 			{{ buttonName }}
