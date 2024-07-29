@@ -10,7 +10,7 @@
 	--clr-gray-dark: #121212;
 	--clr-gray-light: #b3b3b3;
 
-	--clr-bg: var(--clr-black);
+	--clr-bg: var(--clr-white);
 }
 
 * {

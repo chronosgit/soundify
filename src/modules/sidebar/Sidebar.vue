@@ -1,10 +1,10 @@
 <template>
-	<aside class="max-w-[17.5rem] min-w-[17.5rem]">
-		<div class="space-y-2">
-			<Main />
+	<aside
+		class="fixed left-0 h-screen w-full max-w-[17.5rem] p-2 grid grid-rows-[9rem_1fr] gap-2"
+	>
+		<Main />
 
-			<MediaLibrary />
-		</div>
+		<MediaLibrary />
 	</aside>
 </template>
 
