@@ -56,7 +56,7 @@ export async function loadLocaleMessages(i18n, locale) {
 	return nextTick();
 }
 
-export async function checkLocalizationOnRouting(to, next, i18n) {
+export async function checkLocalizationOnRouting(to, i18n) {
 	const paramsLocale = to.params.locale as string;
 
 	handleSettingLanguage(i18n, paramsLocale);

@@ -1,9 +1,9 @@
-<!-- Must be inside relative parent to work as expected -->
+<!-- Must be inside relative parent to work as expected, must consume hoverClass to chagne opacity -->
 
 <template>
 	<div
-		class="opacity-0 absolute left-1/2 -translate-x-1/2 -top-4 -translate-y-4 px-2 py-1 bg-[#282828] rounded-md shadow-lg transition-all delay-150"
-		:class="hoverClass"
+		class="opacity-0 absolute left-1/2 -translate-x-1/2 -translate-y-4 px-2 py-1 bg-[#282828] rounded-md shadow-lg transition-all delay-150"
+		:class="dynamicStyles"
 	>
 		<p class="text-white text-xs whitespace-nowrap">
 			{{ message }}
@@ -24,9 +24,18 @@
 					return typeof value === 'string' && value.length > 0;
 				},
 			},
-			hoverClass: {
+			isHigher: {
+				type: Boolean,
+				required: true,
+			},
+			class: {
 				type: String,
 				required: true,
+			},
+		},
+		computed: {
+			dynamicStyles() {
+				return `${this.class} ${this.isHigher ? '-top-4' : '-bottom-14'}`;
 			},
 		},
 	});
